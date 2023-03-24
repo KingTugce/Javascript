@@ -100,7 +100,25 @@ for (let i = 0; i < Object.keys(person2).length; i++){
     }
 }
 
-// Create our own Object prototypes -- using ES6 method syntax
+// Create our own Object prototypes -- using ES5 method syntax
 function Car(make,model,year){
-    
+    this.make = make;
+    this.model = model;
+    this.year = year;
+
+    // A Method inside of a JS Prototype
+    this.printInfo = function(wheels = 0, color){
+        console.log(`This is a ${this.year}, ${this.make},${this.model}, and has ${wheels} and the color is ${color}`);
+
+        return 'Returned Value'
+    }
 }
+
+// Creating an instance of a prototype
+let my_car = new Car('Honda', 'CR-V', 2019)
+
+// Call the prototype method
+console.log(my_car.printInfo(4, 'Gun Metal'))
+
+// JavaScript Classes
+
