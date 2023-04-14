@@ -182,7 +182,7 @@ function determineAge2(age){
 
 console.log(determineAge2(62))
 
-// LOOOOOOOOPS
+// LOOOOOOOOPS (start+stop+step)
 function countByOne(){
     for(let i = 0 ; i < 20 ; i++){
         console.log(i)
