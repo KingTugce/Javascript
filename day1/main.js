@@ -196,7 +196,13 @@ function decreaseByOne(){
         console.log(i)
 }
 
+
 console.log(decreaseByOne())
+
+// def count_by_one():
+//     for i in Range(0,20,1)
+//         print(i)
+
 
 // WHILE LOOOOOP
 
