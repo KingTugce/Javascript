@@ -106,6 +106,7 @@ function Car(make,model,year){
     this.model = model;
     this.year = year;
 
+
     // A Method inside of a JS Prototype
     this.printInfo = function(wheels = 0, color){
         console.log(`This is a ${this.year}, ${this.make},${this.model}, and has ${wheels} and the color is ${color}`);
