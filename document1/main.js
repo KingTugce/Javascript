@@ -305,3 +305,100 @@ console.log(nums_reduced)
 
 // You can also use methods like .join, .slice, .search, .splice
 
+function decreaseByOne(){
+    for(let i = 20; i > 0; i--){
+        console.log(i)
+    }
+    return "Counting has stopped"
+}
+console.log(decreaseByOne())
+
+function count_with_while(){
+    let i = 0;
+    let text = '';
+    while(i < 10){
+        text += `Text number is ...${i} \n`;
+        i++;
+    };
+    return text;
+}
+console.log(count_with_while())
+
+function countWithDoWhile(){
+    let i = 0;
+    let text = '';
+    do{
+        text += `This is text...${i} \n`;
+        i++;
+    }
+    while(i < 10)
+    return text
+}
+
+// do while will run at least one time!
+console.log(countWithDoWhile())
+
+
+//create an array
+let group_of_people = ['jerry','ben','bash','brock','misty']
+console.log(group_of_people[0])
+//overridiiinnnnggg:
+let coli,moli,joli;
+[moli,joli,coli] = group_of_people
+console.log(coli,moli,joli)
+console.log(joli)
+
+//Method 1 for looping through an array:
+
+function ShowAllPeople(){
+    for(let i = 0; i < group_of_people.length;i++){
+        console.log(group_of_people[i])
+    }
+    return 'done'
+}
+
+console.log(ShowAllPeople())
+
+//Method 2
+console.log(group_of_people.forEach(i => console.log(i)))
+
+//JS ARRAY METHOD:      array.ToString()
+console.log(group_of_people.toString())
+console.log(typeof(group_of_people.toString()))
+
+//More Methods: .map() , .reduce() , .filter()
+
+// .map()
+let b_people = group_of_people.map(i => {
+    if (i[0] == 'b'){
+        return i
+    }else {
+        return false
+    }
+})
+console.log(b_people)
+
+                //long way of mapping:
+// let b_people_test = function (){
+//     let test_aray = [];
+//     for(let i = 0; group_of_people.length; i++){
+//         if(group_of_people[i][0] == 'b'){
+//             test_aray.push(group_of_people[i])
+//         }
+//     }
+//     return test_aray
+// }
+// console.log(b_people_test())
+
+
+// .filter()
+let length_of_names = group_of_people.filter(element => element.length > 4)
+console.log(length_of_names)
+
+// .reduce()
+const numbers = [2,4,6,8,10]
+
+let num_reduced = numbers.reduce((accumulator, current_numbers) => {
+    return accumulator + current_numbers
+})
+console.log(num_reduced)

@@ -3,11 +3,11 @@
 // Switch Case
 
 let day = new Date().getDay();
-
 let literal_day = new Date().toString();
 
 console.log(day)
 console.log(literal_day)
+
 
 // Switch Case Statement Syntax
 switch(day){
