@@ -123,3 +123,17 @@ console.log(my_car.printInfo(4, 'Gun Metal'))
 
 // JavaScript Classes
 
+class Human{
+    constructor(name,age,gender){
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        } 
+        printInfo(){
+            return `Name: ${this.name}  \n Age: ${this.age} \n Gender: ${this.gender}`
+    }
+}
+
+let wilma = new Human("Wilma", 25, "Female");
+
+console.log(wilma.printInfo())
