@@ -156,3 +156,4 @@ class Baby extends Human{
 
 let jimmy = new Baby('Jimmy',4,'Male', true)
 console.log(jimmy.printInfo())
+console.log(jimmy.isBabywalking())
