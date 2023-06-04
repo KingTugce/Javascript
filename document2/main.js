@@ -137,3 +137,22 @@ class Human{
 let wilma = new Human("Wilma", 25, "Female");
 
 console.log(wilma.printInfo())
+
+// JS inheritance using classes
+
+class Baby extends Human{
+    constructor(name,age,gender,walking){
+        super(name,age,gender)
+        this.walking
+    }
+    isBabywalking() {
+        if(this.walking == true){
+            return 'Baby is walking!'
+        }else{
+            return 'Baby is not walking yet!'
+        }
+    }
+}
+
+let jimmy = new Baby('Jimmy',4,'Male', false)
+console.log(jimmy.printInfo())
