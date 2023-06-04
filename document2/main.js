@@ -154,5 +154,5 @@ class Baby extends Human{
     }
 }
 
-let jimmy = new Baby('Jimmy',4,'Male', false)
+let jimmy = new Baby('Jimmy',4,'Male', true)
 console.log(jimmy.printInfo())
