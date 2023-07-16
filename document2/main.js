@@ -157,3 +157,30 @@ class Baby extends Human{
 let jimmy = new Baby('Jimmy',4,'Male', true)
 console.log(jimmy.printInfo())
 console.log(jimmy.isBabywalking())
+
+// JS Closures
+
+// A closure is a self-invoking function that only runs one.
+// One is the important parts is that it has private data inside of it.
+
+// Closures are also a variable data type.
+
+var OutsideNum = 5
+
+var addNums = function(){
+    var insideNum = 6;
+    return OutsideNum + insideNum;
+};
+console.log(addNums())
+console.dir(addNums())
+
+let newAdd = function(outer_var){
+    let innerAdd = function (inner_var){
+        return inner_var + outer_var;
+    };
+
+    return innerAdd;
+};
+
+let addFive = new newAdd(5);
+console.log(addFive(3))
